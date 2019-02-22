@@ -27,23 +27,37 @@ Your base React app has already been created, and includes some components. Incl
 Look through the application code. If you have the old Lambda Times (Applied JavaScript) sprint challenge handy, you may compare how the structure of this app differs from that, noting how React gives us very easy to use concise components.
 
 ## Self-Study/Essay Questions
+***
+- [x] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+  - PropTypes is an npm package that allows us to type check data. It's important to typecheck in Javascript because it is such a dynamic language and a lot of data is mutable. It's good to know you are passing the expected data type to avoid errors and side effects.
+***
+- [x] Describe a life-cycle event in React?
+  - Every component has a birth, growth, and death. At "birth" a component is mounted and it's initial data is set. During "growth" state data can be updated and components change and re-render. At "death" component can be removed or unmounted and data is cleaned up.
+***
+- [x] Explain the details of a Higher Order Component?
+  - A higher order component is a function that takes one or more components as an argument and returns a new component. This new component can be rendered based off of some kind of logic that is present in the HOC and can also use the state data that is in the HOC. 
+***
+- [x] What are three different ways to style components in React? Explain some of the benefits of each.
+  1. Regualar CSS
+    - Can keep seperate from your js files for less clutter, no need to import a package. 
+  2. Styled Components
+    - Keep  styling and javascript all on one page, scoped styling, variables as props. 
+  3. ReactStrap
+    - Styles are prebuilt for you, easy to implement and quickly build an app.
+***
 
-- [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
-- [ ] Describe a life-cycle event in React?
-- [ ] Explain the details of a Higher Order Component?
-- [ ] What are three different ways to style components in React? Explain some of the benefits of each.
 
 ## Project Setup
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
-- [ ] From within the `lambdatimes` folder run `yarn` and then `yarn start`. This will open your locally hosted application in your browser. Once you are ready move onto the next steps.
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
+- [x] From within the `lambdatimes` folder run `yarn` and then `yarn start`. This will open your locally hosted application in your browser. Once you are ready move onto the next steps.
 - [ ] Inside the `Content` folder you will find all 5 components that make up the content of the application. The flow goes like this: `Content > Tabs > Tab` and `Content > Cards > Card`. Follow the directions in the `Content` component to get your data ready.
 
 Follow these steps for completing your project.
