@@ -11,7 +11,7 @@ const Tab = props => {
   if (props.selected === props.tab) {
     var tabStyle = "tab active-tab";
   } else {
-    var tabStyle = "tab";
+    tabStyle = "tab";
   }
   return (
     <div
