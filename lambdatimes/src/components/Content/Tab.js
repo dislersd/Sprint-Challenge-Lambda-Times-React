@@ -1,29 +1,28 @@
-import React from 'react';
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-const TabsParagraph = styled.p `
+const TabsParagraph = styled.p`
   margin: 0 10px;
   cursor: pointer;
-`
+`;
 
 const Tab = props => {
   /* Using your props, determine if the `tab` prop matches the `selectedTab` prop, 
       if they match, the className should be: 'tab active-tab', 
       if it is not it should just be 'tab'*/
+  if (props.selected === props.tab) {
+    var tabStyle = 'tab active-tab'
+  } else {
+    var tabStyle = 'tab'
+  }
   return (
     <div
-      className={''}
-
+      className={`${tabStyle}`}
       onClick={() => {
-        /* Replace this dummy click handler function with your selectTabHandler function from props 
-         you'll need to pass the `tab` in as an argument to this handler. */
-         props.selectTab(props.tab)
+        props.selectTab(props.tab);
       }}
     >
-      <TabsParagraph>
-      	{props.tab.toUpperCase()}
-      </TabsParagraph>
-
+      <TabsParagraph>{props.tab.toUpperCase()}</TabsParagraph>
     </div>
   );
 };
