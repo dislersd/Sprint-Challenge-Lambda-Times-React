@@ -15,7 +15,7 @@ const Tabs = props => {
             tab={tab}
             selectTab={props.selectTab}
             selected={props.selected}
-            // className={props.className}
+            key={tab}
           />
         ))}
       </div>

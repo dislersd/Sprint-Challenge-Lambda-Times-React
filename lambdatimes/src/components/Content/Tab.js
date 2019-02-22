@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const TabsParagraph = styled.p`
@@ -8,13 +8,10 @@ const TabsParagraph = styled.p`
 `;
 
 const Tab = props => {
-  /* Using your props, determine if the `tab` prop matches the `selectedTab` prop, 
-      if they match, the className should be: 'tab active-tab', 
-      if it is not it should just be 'tab'*/
   if (props.selected === props.tab) {
-    var tabStyle = 'tab active-tab'
+    var tabStyle = "tab active-tab";
   } else {
-    var tabStyle = 'tab'
+    var tabStyle = "tab";
   }
   return (
     <div

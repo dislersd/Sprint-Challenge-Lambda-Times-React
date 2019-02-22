@@ -45,26 +45,19 @@ export default class Content extends Component {
     if (this.state.selected === "all") {
       return this.state.cards;
     } else {
-      return this.state.cards.filter( card => card.tab === this.state.selected);
+      return this.state.cards.filter(card => card.tab === this.state.selected);
     }
   };
 
   render() {
     return (
       <div className="content-container">
-        {/* 
-          Add 2 props to the Tabs component, 
-          `selectedTab` that includes the currently selected tab
-          and `selectTabHandler` that includes the function to change the selected tab
-        */}
         <Tabs
           tabs={this.state.tabs}
           selectTab={this.changeSelected}
           selected={this.state.selected}
         />
-        <Cards
-          cards={this.filterCards()}
-        />
+        <Cards cards={this.filterCards()} />
       </div>
     );
   }
