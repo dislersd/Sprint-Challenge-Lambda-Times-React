@@ -38,12 +38,12 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
   - A higher order component is a function that takes one or more components as an argument and returns a new component. This new component can be rendered based off of some kind of logic that is present in the HOC and can also use the state data that is in the HOC. 
 ***
 - [x] What are three different ways to style components in React? Explain some of the benefits of each.
-  1. Regualar CSS
-    - Can keep seperate from your js files for less clutter, no need to import a package. 
-  2. Styled Components
-    - Keep  styling and javascript all on one page, scoped styling, variables as props. 
-  3. ReactStrap
-    - Styles are prebuilt for you, easy to implement and quickly build an app.
+1. Regualar CSS
+  - Can keep seperate from your js files for less clutter, no need to import a package. 
+2. Styled Components
+  - Keep  styling and javascript all on one page, scoped styling, variables as props. 
+3. ReactStrap
+  - Styles are prebuilt for you, easy to implement and quickly build an app.
 ***
 
 

@@ -1,4 +1,10 @@
 import React from 'react';
+import styled from 'styled-components'
+
+const TabsParagraph = styled.p `
+  margin: 0 10px;
+  cursor: pointer;
+`
 
 const Tab = props => {
   /* Using your props, determine if the `tab` prop matches the `selectedTab` prop, 
@@ -7,12 +13,17 @@ const Tab = props => {
   return (
     <div
       className={''}
+
       onClick={() => {
         /* Replace this dummy click handler function with your selectTabHandler function from props 
          you'll need to pass the `tab` in as an argument to this handler. */
+         props.selectTab(props.tab)
       }}
     >
-      {props.tab.toUpperCase()}
+      <TabsParagraph>
+      	{props.tab.toUpperCase()}
+      </TabsParagraph>
+
     </div>
   );
 };
